@@ -23,6 +23,12 @@ app.use(express.urlencoded({ extended: true }))
 //add router in express
 app.use('/', router)
 
+//GET route
+
+router.get('/', (req, res) => {
+  res.send('Personal Portfolio Website Server Home')
+})
+
 //POST route
 router.post('/post', async (req, res) => {
   //Destructuring response token from request body
