@@ -24,7 +24,6 @@ app.use(express.urlencoded({ extended: true }))
 app.use('/', router)
 
 //GET route
-
 router.get('/', (req, res) => {
   res.send('Personal Portfolio Website Server Home')
 })
