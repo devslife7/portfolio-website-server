@@ -11,7 +11,7 @@ const cors = require('cors')
 const axios = require('axios')
 const { json } = require('express')
 const dotenv = require('dotenv').config()
-const port = process.env.PORT || 2000
+const port = process.env.PORT || 3000
 
 //enabling cors
 app.use(cors())
