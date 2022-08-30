@@ -20,7 +20,7 @@ app.use('/', router)
 
 //WAKEUP route
 router.get('/wakeup', (req, res) => {
-  res.send({ message: 'I am awake' })
+  res.send({ message: 'Heroku: I am awake' })
 })
 
 //GET route
