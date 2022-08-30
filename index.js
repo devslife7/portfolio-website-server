@@ -18,6 +18,11 @@ app.use(express.urlencoded({ extended: true }))
 //add router in express
 app.use('/', router)
 
+//WAKEUP route
+router.get('/wakeup', (req, res) => {
+  res.send('I am awake')
+})
+
 //GET route
 router.get('/', (req, res) => {
   res.send('Personal Portfolio Website Server Home')
