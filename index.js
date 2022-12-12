@@ -37,6 +37,8 @@ router.post('/post', async (req, res) => {
   const googleURL = `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.SECRET_KEY}&response=${token}`
   const googleResponse = await axios.post(googleURL)
 
+  console.log('Google Response: ', googleResponse.data)
+
   //check response status and send back to the client-side
 
   res.send(googleResponse.data.success)
